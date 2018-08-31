@@ -1,0 +1,162 @@
+@font-face{
+    font-family: "DancingScript-Regular";
+    src: url("C:/Users/Usuario/Desktop/Desarrollo web_Ignacio_Burgos/font/DancingScript-Regular.otf");
+}
+
+body{
+    background-color: rgb(31, 167, 167);
+    font-family: "DancingScript-Regular";
+}
+
+/* cabecera */
+#cabecera{
+    background-color: #5b7989;
+    color: aliceblue;
+    text-align: left;
+    text-shadow: 4px #02010a;
+    border-radius: 10px 10px 2px 2px;
+    padding-top: 10PX;
+    padding-left: 10PX;
+    padding-right: 10PX;
+}
+#enlaces{
+   text-align: right;
+}
+a[href$=".html"]{
+    text-align: right;
+    color: aliceblue;
+    
+
+    
+}
+a:hover{
+    text-decoration: none;
+}
+
+/* imagen 1 */
+#img1{
+    margin-left: 20%;
+}
+#section1{
+    background-color: #82c3a6;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/*IMAGEN 2 Y 3 */
+#section2{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #d5c75f;
+    border-radius: 10px;
+}
+#section2 [id*="imag"]{
+  flex: 1 2 50%;
+}
+#imag2{
+   order: 1;}
+#imag3{
+   order: 2;}
+#centro1{
+   margin-left: 20%;
+   MARGIN-top: 30px;
+   border: 1px solid black;
+}
+#AS{
+margin-left: 45%;
+color: blue;
+font-size: 1.6em;
+}
+
+@-webkit-keyframes animacion1{
+    from{
+        transform: rotate(10deg);
+        filter: drop-shadow(2PX 2px 2PX #82c3a6 );
+    }
+}
+.trans1:hover{
+   animation: animacion1 2s;
+   border: 2px;
+}
+@-webkit-keyframes animacion2{
+    from{
+        transform: translate(20px,-5px);
+        filter: drop-shadow(2PX 2px 2PX #82c3a6 );
+        
+    }
+}
+.trans2:hover{
+    animation: animacion2 2s;
+    border: 2PX;
+
+}
+
+/* pie de pagina */
+
+#pie{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #C6d5c5;
+    border-radius: 10px;
+    padding-left: 50px;
+}
+footer [id*="column"]{
+  flex: 1 2 25%;
+}
+#column1{
+   order: 1;}
+#column2{
+   order: 2;}
+#column3{
+   order: 3;}
+#column4{
+   order: 4;}
+
+/* medias */
+@media (max-width:420px){
+    #img1{
+        width: 100%;
+    }
+    #section1{
+    background-color: #82c3a6;
+    border-radius: 10px;
+    padding-right: 30%;
+    display: flex;
+    flex-flow: column wrap;
+    }
+    #pie{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #C6d5c5;
+    border-radius: 10px;
+    padding-left: 50px;}
+    
+    footer [id*="column"]{
+    flex: 1 2 100%;}
+    
+    #column1{
+      order: 1;}
+    #column2{
+      order: 2;}
+    #column3{
+      order: 3;}
+    #column4{
+      order: 4;}
+
+    #section2{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #d5c75f;
+    border-radius: 10px; }
+    
+    #section2 [id*="imag"]{
+    flex: 1 2 100%; }
+    
+    #imag2{
+       order: 1;}
+    #imag3{
+       order: 2;}
+}
