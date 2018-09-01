@@ -58,6 +58,10 @@ section [id*="column"]{
       filter: grayscale(100%);  
       padding-top: 30px;  
       order: 6;}
+    
+    .somb{
+      filter: drop-shadow(2PX 2px 2PX #02010a );
+    }
 
 /* pie de pagina */
 
