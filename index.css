@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(31, 167, 167);
+    background-color: #02010a;
     font-family: "DancingScript-Regular";
 }
 
@@ -13,35 +13,36 @@ body{
     background-color: #5b7989;
     color: aliceblue;
     text-align: left;
-    text-shadow: 4px #02010a;
-    border-radius: 10px 10px 2px 2px;
+    text-shadow: 2px #02010a;
+    border-radius: 10px 10px 5px 5px;
     padding-top: 10PX;
     padding-left: 10PX;
     padding-right: 10PX;
+    
 }
 #enlaces{
    text-align: right;
+   padding-bottom: 10px;
+   font-size: 1.5em;
+   
 }
 a[href$=".html"]{
-    text-align: right;
-    color: aliceblue;
-    
-
-    
-}
-a:hover{
-    text-decoration: none;
+    color: aliceblue; }
+.sinsub{
+    text-decoration: none !important;
 }
 
 /* imagen 1 */
 #img1{
-    margin-left: 20%;
+    width: 60%;
+    border: solid black;
 }
 #section1{
     background-color: #82c3a6;
     border-radius: 10px;
     padding-top: 25px;
     padding-bottom: 30px;
+    align-items: center;
     display: flex;
     flex-flow: column wrap;
 }
@@ -62,15 +63,17 @@ a:hover{
    order: 2;}
 #centro1{
    margin-left: 20%;
-   MARGIN-top: 30px;
+   margin-top: 30px;
+   width:60%;
    border: 1px solid black;
 }
 #AS{
-margin-left: 45%;
-color: blue;
+padding-left: 44%;
+color: cadetblue;
 font-size: 1.6em;
 }
 
+/* ANIMACION */
 @-webkit-keyframes animacion1{
     from{
         transform: rotate(10deg);
@@ -84,14 +87,24 @@ font-size: 1.6em;
 @-webkit-keyframes animacion2{
     from{
         transform: translate(20px,-5px);
-        filter: drop-shadow(2PX 2px 2PX #82c3a6 );
-        
+        filter: drop-shadow(2PX 2px 2PX #82c3a6 );   
     }
 }
 .trans2:hover{
     animation: animacion2 2s;
     border: 2PX;
-
+}
+@-webkit-keyframes slidein{
+    
+    0%{ margin-top:150%; }
+    
+    60%{ margin-top:-5%; }
+    
+    100%{ margin-top:0%; }
+}
+header{
+    animation: slidein 2s;
+    
 }
 
 /* pie de pagina */
@@ -118,12 +131,14 @@ footer [id*="column"]{
 /* medias */
 @media (max-width:420px){
     #img1{
-        width: 100%;
+        width: 90%;
+        
     }
     #section1{
     background-color: #82c3a6;
     border-radius: 10px;
-    padding-right: 30%;
+        
+    
     display: flex;
     flex-flow: column wrap;
     }
@@ -159,4 +174,13 @@ footer [id*="column"]{
        order: 1;}
     #imag3{
        order: 2;}
+    
+    
+    #cabecera{
+    text-align: center;
+    }
+    #enlaces{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.2em; }
 }
