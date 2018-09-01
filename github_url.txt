@@ -1,0 +1,8 @@
+INICIO:
+file:///C:/Users/Usuario/Desktop/Desarrollo%20web_Ignacio_Burgos/index.html
+
+PAISAJES:
+file:///C:/Users/Usuario/Desktop/Desarrollo%20web_Ignacio_Burgos/htmls/paisajes.html
+
+RETRATOS:
+file:///C:/Users/Usuario/Desktop/Desarrollo%20web_Ignacio_Burgos/htmls/retratos.html
